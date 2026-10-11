@@ -1,0 +1,21 @@
+{
+  "id": "filter",
+  "name": "Filter Kata Kasar",
+  "version": "1.0.0",
+  "description": "Menahan pesan yang berisi kata dalam daftar filter sebelum dikirim ke provider AI.",
+  "permissions": [],
+  "settingsSchema": [
+    {
+      "key": "blockedKeywords",
+      "label": "Kata yang ditahan (pisahkan dengan koma)",
+      "type": "text",
+      "defaultValue": ""
+    },
+    {
+      "key": "notice",
+      "label": "Pesan pengingat (kosongkan untuk tidak membalas)",
+      "type": "text",
+      "defaultValue": "Mohon gunakan bahasa yang sopan agar kami bisa membantu dengan baik."
+    }
+  ]
+}

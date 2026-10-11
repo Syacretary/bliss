@@ -1,0 +1,31 @@
+name: bliss
+description: Bliss — bot WhatsApp dari HP, dikembangkan oleh Syacretary.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  archive: ^3.6.1
+  file_picker: ^13.1.0
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+  google_mlkit_text_recognition: ^0.17.1
+  pdfx: ^2.11.0
+  permission_handler: ^11.3.1
+  shared_preferences: ^2.5.6
+  url_launcher: ^6.3.0
+  xml: ^6.6.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/legal/

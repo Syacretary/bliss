@@ -1,0 +1,30 @@
+{
+  "name": "@bliss/local-whatsapp-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/cli.js",
+    "build": "tsc",
+    "test": "tsx --test src/*.test.ts"
+  },
+  "dependencies": {
+    "baileys": "7.0.0-rc14",
+    "pino": "9.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.30",
+    "tsx": "4.19.4",
+    "typescript": "5.8.3"
+  },
+  "allowScripts": {
+    "baileys@7.0.0-rc14": true,
+    "esbuild@0.25.12": true,
+    "protobufjs@7.6.6": true
+  }
+}

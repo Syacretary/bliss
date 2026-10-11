@@ -1,0 +1,28 @@
+# Editor and operating-system state
+.DS_Store
+.idea/
+.vscode/
+.gemini/
+
+# This workspace also contains separate experiments and source-image staging.
+Dashboardv2/
+
+# Local credentials and runtime sessions
+**/.env
+**/.secrets/
+**/*.session
+**/*.session.tmp
+**/*.keystore
+**/*.jks
+
+# Generated and downloaded dependency/build state
+**/.dart_tool/
+**/.pub-cache/
+**/.tooling/
+**/build/
+**/node_modules/
+**/dist/
+**/.npm-cache/
+**/.flutter-plugins-dependencies
+**/__pycache__/
+*.pyc
