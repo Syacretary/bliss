@@ -8,7 +8,7 @@ Proyek memiliki jalur embedding Android: Flutter memulai foreground service, ser
 
 ### Build Android
 
-Prasyarat: Android SDK/NDK dan CMake sesuai konfigurasi Flutter, Python 3, Node.js 20+, npm, serta akses jaringan saat pertama kali menyiapkan runtime. Dari folder `WhatsAppBot` jalankan `npm install`, lalu dari `Onboarding` jalankan `flutter pub get` dan `flutter build apk`. Gradle menjalankan `WhatsAppBot/scripts/fetch_android_node_runtime.py`, membangun TypeScript, dan menyalin runtime beserta dependensinya ke assets APK. Node mobile dirilis sebagai prerelease pihak ketiga dan ABI Android harus diuji pada perangkat sebenarnya sebelum rilis.
+Prasyarat: Android SDK/NDK dan CMake sesuai konfigurasi Flutter, Python 3, Node.js 20+, npm, serta akses jaringan saat pertama kali menyiapkan runtime. Dari folder `WhatsAppBot` jalankan `npm install`, lalu dari `MainApp` jalankan `flutter pub get` dan `flutter build apk --split-per-abi` untuk menghasilkan APK lebih kecil per arsitektur. Gradle menjalankan `WhatsAppBot/scripts/fetch_android_node_runtime.py`, membangun TypeScript, dan menyalin runtime beserta dependensinya ke assets APK. Node mobile dirilis sebagai prerelease pihak ketiga dan ABI Android harus diuji pada perangkat sebenarnya sebelum rilis.
 
 ## Batas aman bawaan
 
